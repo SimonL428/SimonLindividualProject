@@ -85,3 +85,20 @@ the following form: YYYY.0M.0D.
 - Designed a music playlist component
 - Designed a artificial neuron component
 - Designed a graph component
+
+```markdown
+
+
+## 2025.02.19
+
+### Added
+
+- Designed a proof of concept for music playlist component
+
+### Updated
+
+- Changed design to include a main method that shows the component in action. As
+well as some of the methods that I plan on implementing for my project which shows
+that my choice of concept is solid.
+
+```
