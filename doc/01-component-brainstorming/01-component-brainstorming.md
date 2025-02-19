@@ -106,11 +106,7 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+I am interested in robotics, more specifically just application of AI to any sort of machines and stuff. I am also pretty open to learning about anything regarding databases, algorithms. My career goals are probably to become some kind of robotics engineer who applies smart systems to actual hard wares to make people's lives easier.
 
 ## Assignment
 
@@ -200,68 +196,115 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: graph
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
-  - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
-    answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+    - A Graph models a collection of vertices and edges. Each vertex can be connected to zero or more other vertices (directed or undirected).
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - void addVertex(V vertex): this adds a vertex v to this graph
+    - void removeVertext(V vertex): removes vertext v and any edges associated
+    - void addEdge(V from, V to): adds an edge between vertices from and to.
+    - removeEdge (V from, V to): remove an edge between vertices from and to
+    - boolean isAdjacent(V from, V to) : reports whether there is an edge from from to to
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
-    answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+    - int vertextCount() : Reports the total number of vertices in this graph.
+    - int edgeCount()
+    Reports the total number of edges in this graph.
+    -List<V> shortestPath(V start, V end)Returns a sequence of vertices forming the shortest path from from to end
+    -Set<V> neighbors(V vertex)
+    Returns all vertices that are directly reachable from the given vertex.
+    -void clear()
+    Removes all vertices (and all edges) from the graph.
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
-  - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+
+
+
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, adding and removing vertices or edges changes the internal structure of the graph, so it must be mutable.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Possibly, could store edges in adjacency list or adjacency matrix.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      Probably won't
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, clear could be implemented by calling kernal methods which contain removing vertices and edges
+
+- Component Design #2: Music Playlist
+  - **Description**:
+    - A MusicPlaylist plays a list of songs in order. My kernel methods provide the minimum functionality to manage and traverse songs. And my secondary methods allow for advanced features like shuffling, sorting, or reordering.
+  - **Kernel Methods**:
+    - void addSong(String song)
+    Adds a song to the playlist (e.g., at the end).
+    - String removeSong(String song)
+    Removes the specified song (if it exists) and returns it.
+    -String getCurrentSong()
+    Returns the currently selected song
+    - void nextSong()
+    Advances to the next song in the playlist (wrap around if at the end).
+  - **Secondary Methods**:
+    - void previousSong()
+    Moves to the previous song in the playlist (wrap around if at the beginning).
+    - void shuffle()
+    Randomly permutes the order of the songs.
+    - void sort(Comparator<String> comparator)
+    Sorts all songs using the provided comparator.
+    - void clear()
+    Removes all songs from the playlist
+    - boolean contains(String song)
+    Reports whether the playlist currently has song.
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - Yes, since you can add, remove and rearrange songs, the component needs to be mutable.
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - Could use arraylist
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - Not necessary
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - Yes, I can implement previousSong using by munipulating with kernal methods like removeSong or nextSong
+
+- Component Design #3: artificial neuron
+  - **Description**:
+    - An Artificial Neuron models a single neuron in a neural network. At its simplest, a neuron has: Inputs, weights for each input, a bias term,
+    and an activation function
+
+  - **Kernel Methods**:
+    - void setInputs(double[] inputs)
+    Sets the input values for this neuron.- void setWeights(double[] weights)Sets the weight values for this neuron.- double computeOutput()
+    Computes the neuron’s output based on current inputs, weights, bias, and activation function.
+    -double getOutput()
+    Returns the most recently computed output
+  - **Secondary Methods**:
+    - void setBias(double bias)
+    Sets a bias term for the neuron.
+    -double getBias()
+    Returns the current bias.
+    -double train(double[] trainingInputs, double targetOutput)
+    Adjusts this neuron’s weights/bias based on an error calculation (
+    - void randomizeWeights()
+    Randomly initializes the weights
+    -void applyActivation(String activationType)
+    Changes the activation function for this neuron
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - Yes since changing weights and bias inherently changes neuron's state
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - I don't know
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - I don't know
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - Yes, i can implement train by calling setInputs and computeOutput
 
 ## Post-Assignment
 
