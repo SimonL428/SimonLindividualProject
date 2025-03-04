@@ -85,3 +85,16 @@ the following form: YYYY.0M.0D.
 - Designed a music playlist component
 - Designed a artificial neuron component
 - Designed a graph component
+
+## 2025.03.03
+
+### Added
+
+- Designed kernel and enhanced interfaces for music playlist component
+- Also added a interface hierarchy diagram for the project.
+
+### Updated
+
+- Changed design to include the two interfaces: enhanced and kernel, based
+on the current main that I have created so far. Added in method descriptions,
+requires, ensures, etc in the style that is presented in osu cse component.

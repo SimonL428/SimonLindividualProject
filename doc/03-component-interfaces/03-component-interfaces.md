@@ -1,8 +1,8 @@
 # Portfolio Part 3: Component Interfaces
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: Simon Luo
+- **Dot Number**: luo.1483
+- **Due Date**: March 3 2025
 
 ## Assignment Overview
 
@@ -132,7 +132,10 @@ hierarchy diagram using whatever tools you would like. Then, include a picture
 of it in this folder. You may also embed it just below using markdown syntax
 (i.e., `![ALT TEXT](path/to/file)`).
 
-<!-- TODO: make a diagram of your component hierarchy then delete this comment -->
+`![Music playlist inventory](doc/03-component-interfaces/Untitled Notebook (5).pdf)`
+If you do not see the image you can also just go to the path:
+`doc/03-component-interfaces/Untitled Notebook (5).pdf`
+
 
 To start making your interfaces, make a branch off of main in your new repo
 called something like `interfaces`. There are many ways to do this, but my
