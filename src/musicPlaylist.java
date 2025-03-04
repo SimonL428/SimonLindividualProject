@@ -3,6 +3,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+
+/* preassignment: I choose the music playlist because i feel like a playlist is a lot similar to the
+* data structures that we have discussed in class, and also a lot like osu cse component.
+* Moreover, it is something that I have been using for a long time so I am more familiar
+* with how it should work in real life. I did do this but forgot to add this in java file
+*/
+
 /**
  * A simple implementation of a Music Playlist.
  * This class allows users to add, remove, and navigate through songs.
