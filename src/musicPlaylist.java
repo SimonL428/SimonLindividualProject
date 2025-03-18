@@ -14,7 +14,7 @@
  *
  * @author ...
  */
-public interface MusicPlaylist extends MusicPlaylistKernel {
+public interface musicPlaylist extends MusicPlaylistKernel {
 
     /**
      * Moves to the previous song in this playlist, wrapping around if at the
