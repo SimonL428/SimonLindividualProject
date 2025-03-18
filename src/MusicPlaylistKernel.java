@@ -13,7 +13,7 @@ import components.standard.Standard;
  *
  * @author ...
  */
-public interface MusicPlaylistKernel extends Standard {
+public interface MusicPlaylistKernel extends Standard<musicPlaylist> {
 
     /**
      * Adds the given song to the end of this playlist.
