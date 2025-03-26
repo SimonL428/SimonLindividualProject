@@ -391,8 +391,7 @@ public abstract class musicPlaylistSecondary implements musicPlaylist {
      * ------------------------------------------------------------------------
      * HELPER METHOD: isEmptyPlaylistWithSong(String song) Because we have no
      * direct representation, we define a check to see if temp is empty or if
-     * the "start" was removed. This is a kludge to avoid infinite loops in the
-     * naive rotation logic.
+     * the "start" was removed.
      * ------------------------------------------------------------------------
      */
     private boolean isEmptyPlaylistWithSong(String start) {
