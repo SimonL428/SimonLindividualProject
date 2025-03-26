@@ -85,3 +85,23 @@ the following form: YYYY.0M.0D.
 - Designed a music playlist component
 - Designed a artificial neuron component
 - Designed a graph component
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Calendar Versioning](https://calver.org/) of
+the following form: YYYY.0M.0D.
+
+## 2025.03.25
+
+### Added
+
+- Designed abstract class for musicplaylist component
+- implemented kernel and enhanced interfaces methods here
+
+### Updated
+
+- changed design to include several helped methods to make the flow of the program
+become more fluent.
