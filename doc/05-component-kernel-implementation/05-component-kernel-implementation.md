@@ -1,9 +1,8 @@
 # Portfolio Part 5: Kernel Implementation
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
-
+- **Name**: Simon Luo
+- **Dot Number**: luo.1483
+- **Due Date**: Apr 9 2025
 ## Assignment Overview
 
 At this point in the portfolio project, the only thing left as far as
@@ -121,6 +120,10 @@ Below is further rationale/explanation for the rubric items above:
 > and interpreted (i.e., by correspondence).
 
 <!-- TODO: select a representation and explain why -->
+I think the best representation is queue as music playlist requires storing
+elements in an ordered way with the ability to add, remove, and play songs in order. In terms of convention, i think the program neds to keep index at 0 for the playlist when there is an empty sequence, and the current index must be a valid position in sequence. Correspondence, would be that making sure this.songs contains exactly same elements as abstract sequence in the same order.
+
+
 
 > To start making your kernel implementation, make a branch off of main in your
 > new repo called something like `kernel-implementation`. There are many ways to
