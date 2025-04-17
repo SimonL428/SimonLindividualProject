@@ -173,4 +173,7 @@ public abstract class MusicPlaylistSecondary implements musicPlaylist {
      * Standard methods (clear, newInstance, transferFrom) remain abstract, to
      * be implemented by a concrete subclass.
      */
+
+     //TODO： implement toString, equals, hashCode
+     // TODO: delete contracts as they're inherited
 }
