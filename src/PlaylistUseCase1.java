@@ -1,5 +1,4 @@
-// File: PlaylistUseCase1.java
-
+// author Simon Luo
 public class PlaylistUseCase1 {
 
     public static void main(String[] args) {
@@ -25,7 +24,8 @@ public class PlaylistUseCase1 {
 
         // Go back one
         playlist.previousSong();
-        System.out.println("After previousSong(): " + playlist.getCurrentSong());
+        System.out
+                .println("After previousSong(): " + playlist.getCurrentSong());
 
         // Remove the current song
         String removed = playlist.removeCurrentSong();
@@ -36,4 +36,3 @@ public class PlaylistUseCase1 {
     }
 
 }
-

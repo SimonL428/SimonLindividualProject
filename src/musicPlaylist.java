@@ -8,7 +8,7 @@
  * convenience methods, built on top of the minimal kernel operations.
  * </p>
  *
- * @author …
+ * @author Simon Luo
  */
 public interface MusicPlaylist extends MusicPlaylistKernel {
 
@@ -45,8 +45,8 @@ public interface MusicPlaylist extends MusicPlaylistKernel {
     boolean contains(String song);
 
     /**
-     * Displays the contents of this playlist to {@code System.out}, marking
-     * the current song.
+     * Displays the contents of this playlist to {@code System.out}, marking the
+     * current song.
      *
      * @ensures <pre>
      *          [prints each song with an indicator for current song]
