@@ -22,6 +22,8 @@ need to do a few things first:
    not always clear how and why someone would use it. Therefore, you should
    probably replicate some of the proof-of-concept work you did previously
    using your complete component.
+   Use case 1:
+   one use case would be playlist mainteanece
 3. **You need to publish your work**: if you haven't yet already, now would
    be a good time to publish your component to a public repo like GitHub.
 

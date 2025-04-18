@@ -1,27 +1,23 @@
+// File: MusicPlaylist.java
+
 /**
- * Enhanced interface for Music Playlist component.
+ * Enhanced interface for a Music Playlist component.
  *
  * <p>
- * This interface extends {@link MusicPlaylistKernel} to provide more advanced
- * functionality, while still allowing the implementation to rely on the minimal
- * kernel methods and the {@code Standard} methods.
+ * This interface extends {@link MusicPlaylistKernel} to provide additional
+ * convenience methods, built on top of the minimal kernel operations.
  * </p>
  *
- * <p>
- * Clients of this interface should use these methods for convenience but
- * understand that they are built on top of the kernel operations.
- * </p>
- *
- * @author ...
+ * @author …
  */
-public interface musicPlaylist extends MusicPlaylistKernel {
+public interface MusicPlaylist extends MusicPlaylistKernel {
 
     /**
      * Moves to the previous song in this playlist, wrapping around if at the
-     * beginning.
+     * beginning.MusicPlaylist
      *
      * @ensures <pre>
-     *          [the current index is decremented by 1 modulo the length of this playlist]
+     *          [currentIndex is decremented by 1 modulo playlist length]
      *          </pre>
      */
     void previousSong();
@@ -30,8 +26,7 @@ public interface musicPlaylist extends MusicPlaylistKernel {
      * Randomly shuffles the songs in this playlist.
      *
      * @ensures <pre>
-     *          [the order of songs in this playlist is randomly permuted, and
-     *           the current index is set to 0 or some implementation-defined value]
+     *          [playlist is randomly permuted and currentIndex reset to 0]
      *          </pre>
      */
     void shuffle();
@@ -40,7 +35,7 @@ public interface musicPlaylist extends MusicPlaylistKernel {
      * Checks if this playlist contains the specified song.
      *
      * @param song
-     *            the song to check for
+     *            the song to check
      * @return true if this playlist contains {@code song}, false otherwise
      * @requires song != null
      * @ensures <pre>
@@ -50,27 +45,23 @@ public interface musicPlaylist extends MusicPlaylistKernel {
     boolean contains(String song);
 
     /**
-     * Displays the contents of this playlist (e.g., for debugging or demo).
+     * Displays the contents of this playlist to {@code System.out}, marking
+     * the current song.
      *
      * @ensures <pre>
-     *          [the contents of this playlist are displayed to the user in some format]
+     *          [prints each song with an indicator for current song]
      *          </pre>
      */
     void displayPlaylist();
 
     /**
-     * (Optional) Returns the number of songs in this playlist.
+     * Returns the number of songs in this playlist.
      *
      * @return the length of this playlist
      * @ensures <pre>
-     *          [returns the total number of songs in this playlist]
+     *          [returns total number of songs in this playlist]
      *          </pre>
      */
     int length();
-
-    /*
-     * Note: We do NOT write method bodies here, because this is an interface.
-     * Implementation will happen in your concrete class.
-     */
 
 }
