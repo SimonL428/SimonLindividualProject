@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public abstract class MusicPlaylistSecondary implements musicPlaylist {
+public abstract class musicPlaylistSecondary implements musicPlaylist {
 
     /**
      * The exact default message that {@code getCurrentSong()} returns when the
@@ -158,5 +158,4 @@ public abstract class MusicPlaylistSecondary implements musicPlaylist {
      * be implemented by a concrete subclass.
      */
 
-    // TODO: delete contracts as they're inherited
 }

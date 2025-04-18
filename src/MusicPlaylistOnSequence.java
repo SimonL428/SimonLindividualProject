@@ -1,3 +1,4 @@
+
 import javax.sound.midi.Sequence;
 
 import components.sequence.Sequence1L;
@@ -43,7 +44,7 @@ import components.sequence.Sequence1L;
  *
  * @author ...
  */
-public class MusicPlaylistOnSequence extends musicPlaylist {
+public class MusicPlaylistOnSequence implements MusicPlaylistKernel {
 
     /**
      * Sequence of song titles.
@@ -218,6 +219,7 @@ public class MusicPlaylistOnSequence extends musicPlaylist {
      * @requires 0 <= index < songs.length()
      * @ensures currentIndex = index
      */
+    @Override
     public void goToSong(int index) {
         if (index < 0 || index >= this.songs.length()) {
             throw new IllegalArgumentException("Index out of bounds");
@@ -232,6 +234,7 @@ public class MusicPlaylistOnSequence extends musicPlaylist {
      * @ensures if songs.length() > 0 then songs.length() = #songs – 1 AND
      *          result = old(songs.entry(old(currentIndex))) else result = null
      */
+    @Override
     public String removeCurrentSong() {
         if (this.songs.length() == 0) {
             return null;
@@ -255,6 +258,7 @@ public class MusicPlaylistOnSequence extends musicPlaylist {
      * @requires song != null AND 0 <= index <= songs.length()
      * @ensures songs.entry(index) = song AND songs.length() = #songs + 1
      */
+    @Override
     public void insertSongAt(String song, int index) {
         if (song == null) {
             throw new IllegalArgumentException("song cannot be null");
@@ -278,6 +282,7 @@ public class MusicPlaylistOnSequence extends musicPlaylist {
      * @requires 0 <= index < songs.length()
      * @ensures songs.length() = #songs – 1
      */
+    @Override
     public String removeSongAt(int index) {
         if (index < 0 || index >= this.songs.length()) {
             throw new IllegalArgumentException("Index out of bounds");
