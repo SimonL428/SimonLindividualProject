@@ -13,7 +13,7 @@ import java.util.Random;
  * implement the kernel methods and the {@code Standard} methods.
  * </p>
  *
- * @author …
+ * @author Simon Luo
  */
 public abstract class MusicPlaylistSecondary implements MusicPlaylist {
 

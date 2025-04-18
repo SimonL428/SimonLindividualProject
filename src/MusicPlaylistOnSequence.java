@@ -1,4 +1,3 @@
-// File: MusicPlaylistOnSequence.java
 
 import components.sequence.Sequence;
 import components.sequence.Sequence1L;
@@ -22,7 +21,7 @@ import components.sequence.Sequence1L;
  * {@code currentIndex}.
  * </p>
  *
- * @author …
+ * @author Simon Luo
  */
 public class MusicPlaylistOnSequence extends MusicPlaylistSecondary {
 

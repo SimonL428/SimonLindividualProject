@@ -11,7 +11,7 @@ import components.standard.Standard;
  * {@code clear()}, {@code newInstance()}, and {@code transferFrom()}.
  * </p>
  *
- * @author …
+ * @author Simon Luo
  */
 public interface MusicPlaylistKernel extends Standard<MusicPlaylist> {
 
