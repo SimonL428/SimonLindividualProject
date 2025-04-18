@@ -1,8 +1,8 @@
 # Portfolio Part 6: Finishing Touches
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: Simon Luo
+- **Dot Number**: luo.1483
+- **Due Date**: April 18 2025
 
 ## Assignment Overview
 
@@ -308,17 +308,27 @@ Take some time to fill them out honestly.
 > understand software development and why?
 
 <!-- TODO: discuss -->
+I think that I understand software development a little bit better in terms of
+the flow of a entire program, having to write everything ourselves instead of
+given the structure already like we used to really helps with that aspect.
+
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
 <!-- TODO: discuss -->
+Yeah, it really showed some of my weaknesses in understanding instances and objects
+I had to go back and learn a lot of these concepts throughout the entire project.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
 <!-- TODO: discuss -->
+I think it is still something I would enjoy. Although I did not get why some things
+that I think needs to be addressed is considered not an appropriate appraoch in
+the discipline, I still think that software development is a rather free space for
+developers to make their ideas into reality.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -327,17 +337,32 @@ Take some time to fill them out honestly.
 > through this process?
 
 <!-- TODO: discuss -->
+I have picked up skills like interface designing, design by contract, abstraction and layering, representation and correspondence. These skills I think is really hard to pick up in a classroom environment, so having the opportunity to actually carry out a project for them is really useful for my understanding of the field.
+
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
 <!-- TODO: discuss -->
+Applied design-by-contract in Java API development, writing precise Javadoc with @requires and @ensures to enforce method preconditions and postconditions.
+
+Engineered a layered component architecture, cleanly separating minimal “kernel” operations from derived “secondary” functionality.
+
+Leveraged the OSU CSE Sequence component and an integer index to model playlists with strong representation invariants and a clear abstraction correspondence.
+
+Implemented core lifecycle methods (clear, newInstance, transferFrom) and kernel operations (addSong, removeSong, getCurrentSong, nextSong) according to the OSU Standard interface.
+
+Built enhanced features (e.g. shuffle, previousSong, contains, displayPlaylist, length) purely atop the kernel API, demonstrating mastery of abstraction.
+
+Developed comprehensive JUnit test suites for both kernel and secondary methods, covering typical use cases, edge conditions, and invalid inputs.
+
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
 <!-- TODO: discuss -->
+I do not think either applies to me, I would say that I am more interested in exploring designing thinigs that are alike a music playlist.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
@@ -345,6 +370,7 @@ Take some time to fill them out honestly.
 > you stay on your path?
 
 <!-- TODO: discuss -->
+I think I will definitely try continue doing another one of these projects in my own time now that I have experience doing it. I would say that my professors are people that I can contact to help.
 
 ### Changelog
 
