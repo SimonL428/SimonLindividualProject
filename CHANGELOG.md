@@ -131,3 +131,26 @@ requires, ensures, etc in the style that is presented in osu cse component.
 well as some of the methods that I plan on implementing for my project which shows
 that my choice of concept is solid.
 
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Calendar Versioning](https://calver.org/) of
+the following form: YYYY.0M.0D.
+
+## YYYY.MM.DD
+
+### Added
+
+- Designed test suite for musicPlaylist component
+- Designed two different use cases for music playlist component
+
+### Updated
+
+- Changed design to include testings for kernel and secondary methods
+- changed design to include two different use cases using the finished component
+- completed all the reflection questions regarding this software project
+
+
