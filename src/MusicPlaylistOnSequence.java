@@ -76,6 +76,7 @@ public class MusicPlaylistOnSequence extends musicPlaylist {
      * @ensures this playlist becomes empty and {@code currentIndex} is reset to
      *          0.
      */
+
     @Override
     public void clear() {
         this.songs.clear();
